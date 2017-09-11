@@ -5,128 +5,25 @@
     <link href="https://fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">
-        body {
-            margin: 0 auto;
-            width: 100%;
-            background: url(cloud-bar.png) repeat-x #fff;
-            padding-top: 10px;
-        }
-
-         ::-webkit-input-placeholder {
-            width: 100%;
-            font-family: 'Miriam Libre';
-            font-size: 12px;
-        }
-
-        .nav {
-            border: 1px solid #dee0df;
-            display: flex;
-            height: 79px;
-            max-width: 100%;
-        }
-
-        .logo {
-            padding-left: 30px;
-            height: 32px;
-            width: 48px;
-            margin-right: 10px;
-            margin-top: 20px;
-            line-height: 80px;
-        }
-
-        .div-middle-menu,
-        .div-right-menu {
-            border-left: 1px solid #CCC;
-            width: 29.5%;
-            padding: 0 30px 0 30px;
-        }
-
-        .div-right-menu>a,
-        .dropdown {
-            color: #525252;
-            display: block;
-            font-size: 15px;
-            padding: 4% 3.3%;
-            font-family: 'Miriam Libre', sans-serif;
-            float: left;
-        }
-
-        .div-right-menu>a:hover,
-        .div-right-menu>div:hover {
-            color: #e74430;
-        }
-
-        .search-img {
-            width: 16px;
-            height: 14.69px;
-            margin-top: 30px;
-            padding-right: 25px;
-            float: left;
-        }
-
-        .img-cloud {
-            display: flex;
-            height: 10px;
-            max-width: 100%;
-            /* max-width: calc(100% - 90px); */
-        }
-
-        .macbook {
-            align-items: center;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            max-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            padding: 3px 20px;
-            line-height: 1.42857143;
-            white-space: nowrap;
-            font-weight: 400;
-            color: #333;
-        }
-
-        .dropdown:hover .dropdown-content {
-            margin-top: 2.5%;
-            display: block;
-        }
-
-        @media screen and (max-width: 960px) {
-            .div-right-menu,
-            .macbook,
-            #laravel,
-            .search-img {
-                display: none;
-            }
-
-            .logo{
-                padding: 0 15px 0 15px;
-            }
-
-            .div-middle-menu {
-                width: 37.5%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="nav">
-        <img src="img\laravel.png" class="logo"><span id="laravel" style="color:#e74430; font-size:18px;line-height: 80px;font-family:'Miriam Libre', sans-serif;width:62.5px;height:80px; padding-right:30px; ">Laravel</span>
+        <img src="img\laravel.png" class="logo"><span id="laravel" style="color:#e74430; font-size:18px;line-height: 80px;font-family:'Miriam Libre', sans-serif;width:62.5px;height:80px; padding-right:15px; ">Laravel</span>
         <div class="div-middle-menu">
             <img src="img\search.png" class="search-img" />
-            <input type="text" style="border:none;outline: none;width: 60%;float:left; height: 100%" placeholder="S E A R C H" />
+            <input type="text" class="search-input" placeholder="S E A R C H" />
         </div>
-        <div class="div-right-menu" style="width: 745px;">
+        <div class="div-hamburguer ">
+            <a href="#" class="hamburguer">☰</a>
+        </div>
+        <div class="div-right-menu div-right-align" style="width: 745px;">
             <a>Documentation</a>
             <a>Laracasts</a>
             <a>News</a>
             <a>Partners</a>
             <a>Forge</a>
-            <!-- <a href="#" class="toggle-slide menu-link btn">☰</a> -->
             <div class="dropdown">
                 <span>EcoSystem</span><span class="fa fa-caret-down" style="padding-left: 7%;font-size: 12px"></span>
                 <div class="dropdown-content">
@@ -148,18 +45,14 @@
             </div>
         </div>
     </div>
-    <div style="padding:60px;">
+    <div style="padding:50px;">
         <h1 style="font-family: 'Source Sans Pro', sans-serif;text-align: center; font-size: 48px;font-weight: 200;color:#525252">Love beautiful code? We do too.</h1>
-        <h3 style="font-size: 21px;
-        letter-spacing: -.02em;
-        text-align: center;
-        font-weight: 200;
-        font-family: 'Miriam Libre','Source Sans Pro',sans-serif;    color: #aeaeae;
-        -webkit-font-smoothing: antialiased;">The PHP Framework For Web Artisans</h3>
+        <h3 class="subtitulo">The PHP Framework For Web Artisans</h3>
     </div>
+
     <div class="macbook" align="center">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-            x="0px" y="0px" width="694.1px" height="384px" viewBox="0 0 694.1 384" enable-background="new 0 0 694.1 384" xml:space="preserve">
+            x="0px" y="0px" width="955px" height="425px" viewBox="0 0 694.1 384" enable-background="new 0 0 694.1 384" xml:space="preserve">
             <defs>
             </defs>
             <g id="macbook" transform="translate(1.000000, 1.000000)" sketch:type="MSLayerGroup">
@@ -178,10 +71,7 @@
                     c-3.5,0-7.8-0.7-7.8-2.9V352"></path>
             </g>
         </svg>
-
     </div>
-
-
     </body/>
 
 </html>
